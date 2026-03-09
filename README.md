@@ -233,10 +233,11 @@ List contents of a folder by HFS path. Returns name, type code, creator code, si
 
 | Environment | Architecture | OS Versions | Status |
 |-------------|-------------|-------------|--------|
+| 68k Macs | 68k | System 7.0–8.1 | S✅ Tested on System 7.6.1  |
+| PowerPC Macs | PowerPC | Mac OS 8.5–9.2.2 | Builds, untested |
 | BasiliskII | 68k | System 7.0–8.1 | ✅ Tested on System 7.6.1 |
 | SheepShaver | PowerPC | Mac OS 8.5–9.2.2 | Builds, untested |
-| Real 68k Macs | 68k | System 7.0–8.1 | Should work, untested |
-| Real PowerPC Macs | PowerPC | Mac OS 8.5–9.2.2 | Builds, untested |
+
 
 AgentBridge requires System 7.0 or later (for Apple Events support).
 
@@ -461,6 +462,6 @@ This project has two components with separate licenses:
 
 **MCP Server** (TypeScript, `src/` directory) — [GNU General Public License v3.0](LICENSE) — free to use, modify, and distribute under GPL terms.
 
-**AgentBridge.app** (Classic Mac application) — © 2026 Falling Data Zone, LLC. All rights reserved. Pre-built binaries are available for download. Source code is not distributed.
+**AgentBridge.app** (Classic Mac application) — © 2026 Falling Data Zone, LLC. All rights reserved. Pre-built binaries are available for download.
 
-**Protocol** — the AgentBridge protocol as documented in this README is open. Anyone may implement it in their own software.
+**Protocol** — the AgentBridge protocol as documented in this README is open.
