@@ -233,7 +233,7 @@ List contents of a folder by HFS path. Returns name, type code, creator code, si
 
 | Environment | Architecture | OS Versions | Status |
 |-------------|-------------|-------------|--------|
-| 68k Macs | 68k | System 7.0–8.1 | S✅ Tested on System 7.6.1  |
+| 68k Macs | 68k | System 7.0–8.1 | ✅ Tested on System 7.6.1  |
 | PowerPC Macs | PowerPC | Mac OS 8.5–9.2.2 | Builds, untested |
 | BasiliskII | 68k | System 7.0–8.1 | ✅ Tested on System 7.6.1 |
 | SheepShaver | PowerPC | Mac OS 8.5–9.2.2 | Builds, untested |
@@ -247,7 +247,9 @@ AgentBridge requires System 7.0 or later (for Apple Events support).
 
 Download from the [Releases](../../releases) page:
 
+- **`AgentBridge-68k.bin`** — MacBinary for 68k Macs (System 7–8.1)
 - **`AgentBridge-68k.dsk`** — HFS disk image for 68k Macs (System 7–8.1)
+- **`AgentBridge-ppc.bin`** — MacBinary for PowerPC Macs (OS 8.5–9.2.2)
 - **`AgentBridge-ppc.dsk`** — HFS disk image for PowerPC Macs (OS 8.5–9.2.2)
 
 ### Setup
@@ -312,7 +314,7 @@ The MCP server exposes AgentBridge commands as tools for AI agents like Claude. 
 ### Installation
 
 ```bash
-cd mcp-server
+cd agentbridge
 npm install
 npm run build
 ```
@@ -344,7 +346,7 @@ Add to your Claude Desktop config (`claude_desktop_config.json`):
   "mcpServers": {
     "classic-mac": {
       "command": "node",
-      "args": ["/path/to/mcp-server/dist/server.js", "--config", "/path/to/fleet.json"]
+      "args": ["/path/to/agentbridge/dist/server.js", "--config", "/path/to/agentbridge/config/fleet.json"]
     }
   }
 }
