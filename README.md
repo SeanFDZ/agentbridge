@@ -10,13 +10,13 @@ Drop AgentBridge into a shared folder, launch it on your Mac, and an AI agent ca
 
 ```
 ┌──────────────────────┐
-│    Claude / AI Agent  │
-│         │             │
-│    MCP Protocol       │
-│         │             │
-│    MCP Server (Node)  │
-│         │             │
-│    Shared Folder I/O  │
+│    Claude / AI Agent │
+│         │            │
+│    MCP Protocol      │
+│         │            │
+│    MCP Server (Node) │
+│         │            │
+│    Shared Folder I/O │
 └────────┬─────────────┘
          │  reads/writes text files
          │
@@ -33,13 +33,13 @@ Drop AgentBridge into a shared folder, launch it on your Mac, and an AI agent ca
          │
 ┌────────┴─────────────────────────┐
 │  Classic Mac OS 7 / 8 / 9        │
-│                                   │
-│  AgentBridge.app                  │
-│  - Polls inbox for commands       │
-│  - Executes via Mac Toolbox       │
-│  - Writes responses to outbox     │
-│  - Heartbeat every 2 seconds      │
-└───────────────────────────────────┘
+│                                  │
+│  AgentBridge.app                 │
+│  - Polls inbox for commands      │
+│  - Executes via Mac Toolbox      │
+│  - Writes responses to outbox    │
+│  - Heartbeat every 2 seconds     │
+└──────────────────────────────────┘
 ```
 
 The transport is just a folder. How that folder is shared between the AI and the Mac is up to you:
