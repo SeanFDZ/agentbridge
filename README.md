@@ -410,7 +410,7 @@ The MCP server monitors the heartbeat file's modification time to determine if A
 ## Building the MCP Server
 
 ```bash
-cd classic-mac-mcp
+cd agentbridge
 npm install
 npm run build
 ```
@@ -422,18 +422,15 @@ AgentBridge binaries are available as pre-built downloads — source code is not
 ## Project Structure
 
 ```
-classic-mac-mcp/
+agentbridge/
 ├── src/                            # MCP server (TypeScript, GPLv3)
 │   ├── server.ts                   # MCP tool definitions and handlers
 │   ├── fleet.ts                    # Fleet registry
 │   ├── types.ts                    # Type definitions
 │   └── bridge/
 │       └── client.ts               # Shared folder I/O client
-├── config/
-│   └── fleet.json                  # Fleet configuration
-└── releases/                       # Pre-built AgentBridge binaries
-    ├── AgentBridge-68k.dsk         # For 68k Macs (System 7–8.1)
-    └── AgentBridge-ppc.dsk         # For PowerPC Macs (OS 8.5–9.2.2)
+└── config/
+    └── fleet.json                  # Fleet configuration
 ```
 
 ## Design Principles
