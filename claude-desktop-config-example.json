@@ -1,0 +1,15 @@
+{
+  "_comment": "Add this to your Claude Desktop config at ~/Library/Application Support/Claude/claude_desktop_config.json",
+  "_comment2": "Or for Claude Code:  add to .claude/settings.json",
+
+  "mcpServers": {
+    "classic-mac": {
+      "command": "node",
+      "args": [
+        "/path/to/agentbridge/dist/server.js",
+        "--config",
+        "/path/to/agentbridge/config/fleet.json"
+      ]
+    }
+  }
+}
