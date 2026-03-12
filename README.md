@@ -6,6 +6,10 @@ AgentBridge is a native Classic Mac OS application that lets AI agents (like Cla
 
 Drop AgentBridge into a shared folder, launch it on your Mac, and an AI agent can list windows, open apps, type text, read the clipboard, browse files, and more — all through a simple text-based protocol.
 
+<p align="center">
+  <img src="docs/images/image0.jpg" width="600" alt="AgentBridge splash screen on a Mac SE">
+</p>
+
 ## How It Works
 
 ```
@@ -280,6 +284,10 @@ Download from the [Releases](../../releases) page:
    ```
 
    You should see `RESULT pong` and `STATUS ok`.
+
+<p align="center">
+  <img src="docs/images/image1.jpg" width="600" alt="Text typed by Claude into a Mac SE via AgentBridge">
+</p>
 
 ### Multiple Macs
 
