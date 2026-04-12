@@ -1,14 +1,36 @@
 {
   "name": "classic-mac-mcp",
-  "version": "0.1.0",
+  "version": "1.0.2",
   "description": "MCP server for controlling Classic Mac OS targets (emulated and real hardware)",
   "author": "Falling Data Zone LLC",
-  "license": "UNLICENSED",
+  "license": "GPL-3.0",
   "type": "module",
   "main": "dist/server.js",
   "bin": {
     "classic-mac-mcp": "dist/server.js"
   },
+  "files": [
+    "dist",
+    "config",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SeanFDZ/agentbridge.git"
+  },
+  "homepage": "https://apps.fallingdata.zone/agentbridge/",
+  "mcpName": "io.github.SeanFDZ/agentbridge",
+  "keywords": [
+    "mcp",
+    "classic-mac",
+    "retro-computing",
+    "macos",
+    "system7",
+    "68k",
+    "powerpc",
+    "ai-agent"
+  ],
   "scripts": {
     "build": "tsc",
     "start": "node dist/server.js",
