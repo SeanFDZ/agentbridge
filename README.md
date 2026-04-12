@@ -1,5 +1,7 @@
 # AgentBridge
 
+[![npm](https://img.shields.io/npm/v/classic-mac-mcp)](https://www.npmjs.com/package/classic-mac-mcp) [![MCP Registry](https://img.shields.io/badge/MCP_Registry-agentbridge-blue)](https://registry.modelcontextprotocol.io/servers/io.github.SeanFDZ/agentbridge)
+
 **Let AI talk to your Classic Mac.**
 
 AgentBridge is a native Classic Mac OS application that lets AI agents (like Claude) interact with Mac OS 7–9 through structured commands and responses. It works on real hardware and emulators — no modifications to your Mac required.
@@ -319,9 +321,22 @@ AgentBridge uses its own launch location as its working directory — no configu
 
 The MCP server exposes AgentBridge commands as tools for AI agents like Claude. It's a Node.js TypeScript server that communicates via stdio (standard MCP transport).
 
-### Installation
+### Install via npm
 
 ```bash
+npm install -g classic-mac-mcp
+```
+
+Or run directly with npx (no install needed):
+
+```bash
+npx -y classic-mac-mcp --config /path/to/fleet.json
+```
+
+### Install from source
+
+```bash
+git clone https://github.com/SeanFDZ/agentbridge.git
 cd agentbridge
 npm install
 npm run build
@@ -329,7 +344,7 @@ npm run build
 
 ### Configuration
 
-Edit `config/fleet.json` to point at your shared folders:
+Create a `fleet.json` file to point at your shared folders:
 
 ```json
 {
@@ -348,6 +363,19 @@ Edit `config/fleet.json` to point at your shared folders:
 ### Claude Desktop
 
 Add to your Claude Desktop config (`claude_desktop_config.json`):
+
+```json
+{
+  "mcpServers": {
+    "classic-mac": {
+      "command": "npx",
+      "args": ["-y", "classic-mac-mcp", "--config", "/path/to/fleet.json"]
+    }
+  }
+}
+```
+
+Or if you installed from source:
 
 ```json
 {
@@ -417,15 +445,16 @@ TS 20260308T173113
 
 The MCP server monitors the heartbeat file's modification time to determine if AgentBridge is alive.
 
-## Building the MCP Server
+## Building from Source
 
 ```bash
+git clone https://github.com/SeanFDZ/agentbridge.git
 cd agentbridge
 npm install
 npm run build
 ```
 
-Requires Node.js 18+.
+Requires Node.js 20+.
 
 AgentBridge binaries are available as pre-built downloads — source code is not distributed.
 
