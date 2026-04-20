@@ -1,0 +1,22 @@
+# CMake
+build/
+build-output/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+CTestTestfile.cmake
+_deps/
+
+# Retro68 build outputs
+*.APPL
+*.bin
+*.dsk
+*.pef
+*.xcoff
+*.code.bin
+*.rsrc.bin
+
+# Editor / OS
+.DS_Store
+*.swp

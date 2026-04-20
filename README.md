@@ -498,6 +498,6 @@ This project has two components with separate licenses:
 
 **MCP Server** (TypeScript, `src/` directory) — [GNU General Public License v3.0](LICENSE) — free to use, modify, and distribute under GPL terms.
 
-**AgentBridge.app** (Classic Mac application) — © 2026 Falling Data Zone, LLC. All rights reserved. Pre-built binaries are available for download.
+**AgentBridge.app** (Classic Mac application, source in `classic-mac-src/`) — modified [PolyForm Noncommercial 1.0.0](classic-mac-src/LICENSE). © 2026 Falling Data Zone, LLC. Pre-built binaries are available for download.
 
 **Protocol** — the AgentBridge protocol as documented in this README is open.
