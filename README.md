@@ -492,6 +492,12 @@ Sean Lavigne
 
 Built with [Retro68](https://github.com/autc04/Retro68) by Wolfgang Thaller.
 
+## Also From Falling Data Zone
+
+**[MacMind](https://github.com/SeanFDZ/macmind)** — a single-layer transformer neural network implemented entirely in HyperTalk, trained and running on a Macintosh SE/30. Proof that 1987 scripting can do machine learning.
+
+More apps at [apps.fallingdata.zone](https://apps.fallingdata.zone).
+
 ## License
 
 This project has two components with separate licenses:
